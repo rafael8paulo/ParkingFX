@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXDatePicker?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import com.jfoenix.controls.JFXTimePicker?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: D5D5D5;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="projetoestacionamento.FXMLTelaSaidaDeVeiculosController">
+   <children>
+      <AnchorPane layoutY="350.0" prefHeight="50.0" prefWidth="0.0" style="-fx-background-color: #A9A9A9;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+         <children>
+            <Button fx:id="btEncerrar" layoutX="478.0" layoutY="10.0" mnemonicParsing="false" onAction="#evtBtEncerrar" prefWidth="100.0" text="Encerrar" AnchorPane.rightAnchor="50.0" AnchorPane.topAnchor="10.0">
+               <font>
+                  <Font name="Comic Sans MS" size="12.0" />
+               </font>
+            </Button>
+            <JFXTextField fx:id="txtTotal" layoutX="239.0" layoutY="10.0" AnchorPane.leftAnchor="150.0">
+               <font>
+                  <Font name="Comic Sans MS" size="15.0" />
+               </font>
+            </JFXTextField>
+            <Text fill="WHITE" layoutX="84.0" layoutY="36.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Total:" AnchorPane.leftAnchor="50.0">
+               <font>
+                  <Font name="Comic Sans MS" size="24.0" />
+               </font>
+            </Text>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="10.0" layoutY="10.0" prefHeight="50.0" prefWidth="0.0" style="-fx-background-color: #A9A9A9;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Text fill="WHITE" layoutX="50.0" layoutY="37.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Saída de Veículos" AnchorPane.leftAnchor="50.0" AnchorPane.topAnchor="10.0">
+               <font>
+                  <Font name="Comic Sans MS" size="24.0" />
+               </font>
+            </Text>
+            <Button fx:id="btFechar" layoutX="500.0" layoutY="-1.0" mnemonicParsing="false" onAction="#evtBtFechar" text="X" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="5.0" />
+         </children>
+      </AnchorPane>
+      <JFXTextField fx:id="txtPlaca" layoutX="52.0" layoutY="86.0" AnchorPane.leftAnchor="50.0" AnchorPane.rightAnchor="50.0" AnchorPane.topAnchor="90.0" />
+      <Text layoutX="50.0" layoutY="85.0" strokeType="OUTSIDE" strokeWidth="0.0" text="* Placa" AnchorPane.leftAnchor="50.0">
+         <font>
+            <Font name="Comic Sans MS" size="14.0" />
+         </font>
+      </Text>
+      <JFXDatePicker fx:id="dpEntrada" defaultColor="GREY" layoutX="50.0" layoutY="165.0" />
+      <JFXTimePicker fx:id="tpEntrada" defaultColor="GREY" layoutX="331.0" layoutY="165.0" AnchorPane.rightAnchor="50.0" />
+      <JFXTextField fx:id="txtProp" layoutX="50.0" layoutY="218.0" AnchorPane.leftAnchor="50.0" AnchorPane.rightAnchor="50.0" />
+   </children>
+</AnchorPane>

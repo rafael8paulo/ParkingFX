@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: D5D5D5;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="projetoestacionamento.FXMLCadVeiculoController">
+   <children>
+      <AnchorPane layoutX="-39.0" layoutY="-48.0" prefHeight="50.0" prefWidth="200.0" style="-fx-background-color: #A9A9A9;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Button fx:id="btFechar" layoutX="443.0" layoutY="13.0" mnemonicParsing="false" onAction="#evtBtFechar" text="X" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="5.0" />
+            <Text fill="WHITE" layoutX="32.0" layoutY="30.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Cadastro de Veiculos" AnchorPane.leftAnchor="50.0" AnchorPane.topAnchor="10.0">
+               <font>
+                  <Font name="Comic Sans MS" size="24.0" />
+               </font>
+            </Text>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="10.0" layoutY="10.0" prefHeight="50.0" prefWidth="200.0" style="-fx-background-color: #A9A9A9;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+         <children>
+            <Button fx:id="btGravar" layoutX="475.0" layoutY="24.0" mnemonicParsing="false" onAction="#evtBtGravar" prefWidth="100.0" text="Gravar" AnchorPane.rightAnchor="50.0" AnchorPane.topAnchor="10.0">
+               <font>
+                  <Font name="Comic Sans MS" size="12.0" />
+               </font>
+            </Button>
+            <Button fx:id="btNovo" layoutX="460.0" layoutY="20.0" mnemonicParsing="false" onAction="#evtBtNovo" prefWidth="100.0" text="Novo" AnchorPane.leftAnchor="50.0" AnchorPane.topAnchor="10.0">
+               <font>
+                  <Font name="Comic Sans MS" size="12.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+      <ComboBox fx:id="cbModelos" layoutX="50.0" layoutY="143.0" onKeyPressed="#evtKeyPressedMod" prefWidth="150.0" AnchorPane.leftAnchor="50.0" AnchorPane.rightAnchor="50.0" />
+      <Label layoutX="50.0" layoutY="117.0" text="* Modelo" AnchorPane.leftAnchor="50.0">
+         <font>
+            <Font name="Comic Sans MS" size="12.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="cbProp" layoutX="50.0" layoutY="197.0" onKeyPressed="#evtKeyPressedProp" prefWidth="150.0" AnchorPane.leftAnchor="50.0" AnchorPane.rightAnchor="50.0" />
+      <Label layoutX="50.0" layoutY="179.0" text="* Proprietário">
+         <font>
+            <Font name="Comic Sans MS" size="12.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtPlaca" layoutX="50.0" layoutY="200.0" prefWidth="240.0" AnchorPane.topAnchor="80.0" />
+      <Label layoutX="50.0" layoutY="181.0" text="* Placa" AnchorPane.topAnchor="60.0">
+         <font>
+            <Font name="Comic Sans MS" size="12.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtCor" layoutX="300.0" layoutY="209.0" prefWidth="240.0" AnchorPane.rightAnchor="50.0" AnchorPane.topAnchor="80.0" />
+      <Label layoutX="300.0" layoutY="190.0" text="* Cor" AnchorPane.leftAnchor="310.0" AnchorPane.topAnchor="60.0">
+         <font>
+            <Font name="Comic Sans MS" size="12.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
