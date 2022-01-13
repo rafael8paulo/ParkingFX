@@ -2,8 +2,7 @@
  🅿arkingFX 
 </h1>
 <p align="center">
- ParkingFX - Projeto Bimestral da matéria Ferramentas Computacionais II  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.14.0/devicon.min.css">
-
+ ParkingFX - Projeto Bimestral da matéria Ferramentas Computacionais II <img align="center" alt="Rafa-CSS" height="30" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg">
 </p>
 <p align="justify">
 Software cujo o objetivo é um controle de um estacionamento, onde se registra entrada e saída de veículos, assim calculando o tempo em que o veículo ficou no estabelecimento, informando o valor a ser pago baseado no valor da hora comprada, acrescentando com o valor da hora adicional, o software contem relatórios feitos com Jaspersoft Studio e relatórios utilizando JavaFX e SQL sendo possível filtrar por determinada data, Front-End feito com JavaFX com auxilio da biblioteca jfoenix Back-End somente utilizando JAVA.
